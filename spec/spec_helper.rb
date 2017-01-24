@@ -21,6 +21,9 @@ RSpec.configure do |config|
   config.before(:all) { @browser = browser }
   #config.after(:suite) { browser.close }
   config.after(:suite) do
+   	p browser.text
+	browser.screenshot.save 'finished.png'
+
    	browser.close
     headless.destroy
   end
