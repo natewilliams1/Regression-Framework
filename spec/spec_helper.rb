@@ -6,7 +6,7 @@ require 'page-object'
 require 'page-object/page_factory'
 require 'faker'
 require 'pages'
-#require 'headless'
+require 'headless'
 
 
 headless = Headless.new
