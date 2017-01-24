@@ -13,7 +13,7 @@ headless = Headless.new
 headless.start
 
 
-browser = Watir::Browser.new :chrome
+browser = Watir::Browser.new :firefox
 browser.window.maximize
 
 RSpec.configure do |config|
